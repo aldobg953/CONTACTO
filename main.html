@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria</title>
+
+</head>
+
+<link rel="stylesheet" href="styles/main.css">
+
+<body class="no-seleccionable">
+    <center>
+        <div class="form">
+            <p class="title-form">Formulario</p>
+
+            <div class="input-group">
+                <input required="" type="text" name="text" autocomplete="off" class="input">
+                <label class="user-label" for="name">Nombre</label>
+            </div>
+
+            <hr>
+
+            <div class="input-group">
+                <input required="" type="text" name="text" autocomplete="off" class="input">
+                <label class="user-label" for="email">Correo</label>
+            </div>
+
+            <hr>
+
+            <p class="title-radio">Razón</p>
+
+            <div class="container">
+                <form>
+                    <label>
+                        <input type="radio" name="radio" checked="">
+                        <span>Queja</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>Agendar cita</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>Aclaración</span>
+                    </label>
+                </form>
+            </div>
+
+            <hr>
+
+            <p class="title-radio">Detalles</p>
+
+            <textarea name="" id="texto" maxlength="255"></textarea>
+
+            <hr>
+
+            <p class="title-radio">¿Cómo nos conociste?</p>
+
+            <select name="potencial" id="potencial" class="custom-select sources" placeholder="Project hiring">
+                <option value="DH" selected class="header-select">Selecciona una opción</option>
+                <option value="A">Redes sociales</option>
+                <option value="B">Amigos o familiares</option>
+                <option value="C">Aun no</option>
+                <option value="D">D</option>
+            </select>
+
+            <hr>
+
+            <p class="title-radio"> </p>
+
+            <button name="send" type="submit">
+                Enviar
+            </button>
+
+            <hr>
+
+        </div>
+
+    </center>
+</body>
+
+</html>

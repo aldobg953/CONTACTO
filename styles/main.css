@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    margin-block: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #8b8b8b;
+    padding-right: 5px;
+    border-radius: 999rem;
+}
+
+body {
+    user-select: none;
+  }
+
+* {
+    font-family: "Poppins", sans-serif;
+    color: #323232;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid rgba(162, 162, 162, 0.45);
+    border-radius: 1.5rem;
+    width: 30vw;
+    padding: 0.5vh;
+    box-shadow: 0 0 20px rgba(154, 154, 154, 0.196);
+    margin: 5vh;
+}
+
+.title-form {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.title-radio {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+/******************************************* INPUT **************************************/
+.input-group {
+    position: relative;
+}
+
+.input {
+    width: 20vw;
+    border: 3px solid rgba(162, 162, 162, 0.45);
+    border-radius: 1.5rem;
+    background: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #323232;
+    transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.user-label {
+    position: absolute;
+    left: 15px;
+    color: #a5a5a5;
+    pointer-events: none;
+    transform: translateY(1.2rem);
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input:focus,
+input:valid {
+    outline: none;
+    border: 3px solid #DB4437;
+}
+
+.input:focus~label,
+input:valid~label {
+    transform: translateY(-50%) scale(0.95);
+    background-color: #ffffff;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    color: #DB4437;
+}
+
+.input-group:hover {
+    transition: all 300ms;
+    border-color: #ffaca4;
+    transform: scale(1.05);
+}
+
+.input-group:not(:hover) {
+    transition: all 300ms;
+}
+
+input:focus{
+    transform: scale(1.05);
+    transition: all 300ms;
+}
+
+input:not(:focus) {
+    transition: all 300ms;
+}
+
+
+/******************************************* RADIO **************************************/
+
+.container form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 3px solid rgba(162, 162, 162, 0.45);
+    border-radius: 1.5rem;
+    padding: 1rem;
+    width: 20vw;
+    justify-content: space-around;
+}
+
+.container label {
+    display: flex;
+    cursor: pointer;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0.375em;
+}
+
+.container label input {
+    position: absolute;
+    left: -9999px;
+}
+
+.container label input:checked+span {
+    background-color: #DB4437;
+    color: white;
+}
+
+.container label input:checked+span:before {
+    box-shadow: inset 0 0 0 0.3em #ffffff;
+    background-color: #DB4437;
+}
+
+.container label span {
+    display: flex;
+    align-items: center;
+    padding: 0.375em 0.75em 0.375em 0.375em;
+    border-radius: 1.5rem;
+    transition: 0.25s ease;
+    color: #323232;
+}
+
+.container label span:hover {
+    background-color: #db453737;
+}
+
+.container label span:before {
+    display: flex;
+    flex-shrink: 0;
+    content: "";
+    background-color: #fff;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    margin-right: 0.375em;
+    transition: 0.25s ease;
+    box-shadow: inset 0 0 0 0.125em #DB4437;
+}
+
+.container form:hover {
+    transition: all 300ms;
+    transform: scale(1.05);
+    border-color: #ffaca4;
+}
+
+.container form:not(:hover) {
+    transition: all 300ms;
+
+}
+
+label:hover {
+    transition: all 300ms;
+    transform: scale(1.05);
+}
+
+label:not(:hover) {
+    transition: all 300ms;
+}
+
+label:active {
+    transition: all 300ms;
+    transform: scale(.95);
+}
+
+
+/********************************** AREA DE TEXTO ****************************/
+textarea {
+    justify-items: left;
+    display: inline-block;
+    border: 3px solid rgba(162, 162, 162, 0.45);
+    border-radius: 1.5rem;
+    padding: 1rem;
+    width: 20vw;
+    height: 25vh;
+    font-size: 1.2rem;
+    resize: none;
+    outline: #DB4437;
+}
+
+textarea:focus {
+    transition: all 300ms;
+    border-color: #DB4437;
+}
+
+textarea:hover {
+    transition: all 300ms;
+    transform: scale(1.05);
+}
+
+textarea:not(:hover) {
+    transition: all 300ms;
+}
+
+
+/********************************* SELECT *******************************************/
+select {
+    border: 3px solid rgba(162, 162, 162, 0.45);
+    border-radius: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 20vw;
+    height: 5vh;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+select option {
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px solid rgba(162, 162, 162, 0.45);
+  }
+
+select:focus {
+    transition: all 300ms;
+    border-color: #DB4437;
+}
+
+select:hover {
+    transition: all 300ms;
+    transform: scale(1.05);
+}
+
+select:not(:hover) {
+    transition: all 300ms;
+}
+
+
+
+/********************************* BOTON *******************************************/
+button {
+    width: 15vw;
+    border: 3px solid #DB4437;
+    color: #DB4437;
+    border-radius: 9999rem;
+    background: white;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: all 300ms;
+    color: #fff;
+    background-color: #DB4437;
+    border-color: transparent;
+}
+
+button:active {
+    transform: scale(0.97);
+    color: #323232;
+}
+
+button:not(:hover) {
+    transition: all 300ms;
+}
